@@ -94,7 +94,7 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonpro"
+PACKAGE = "liblearn"
 NAME = PACKAGE
 DESCRIPTION = "Módulo de estudos para pytools do curso python pro"
 AUTHOR = "Sergio Casas"
@@ -125,7 +125,7 @@ setup(
         "Framework :: Pytest",
     ],
     install_requires=[
-        'requests'libpythonpro/setup.py at master · pythonprobr/libpythonpro
+        'requests'
     ],
     zip_safe=False,
 )
