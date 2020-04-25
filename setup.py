@@ -95,7 +95,7 @@ def find_package_data(
 
 
 PACKAGE = "liblearn"
-NAME = PACKAGE
+NAME = "liblearnpro"
 DESCRIPTION = "Módulo de estudos para pytools do curso python pro"
 AUTHOR = "Sergio Casas"
 AUTHOR_EMAIL = "serluscasas@gmail.com"
@@ -107,7 +107,7 @@ setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description=open('README.md', encoding='utf-8').read(),
+    long_description="Projeto de estudos de libs para python e publicação",
     long_description_content_type="text/markdown",
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
