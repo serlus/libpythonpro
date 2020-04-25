@@ -108,7 +108,7 @@ setup(
     version=VERSION,
     description=DESCRIPTION,
     long_description="Projeto de estudos de libs para python e publicação",
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst",
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
     license=read('LICENSE'),
