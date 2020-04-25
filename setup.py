@@ -15,7 +15,7 @@ def read(fname):
 # of replicating them:
 standard_exclude = ["*.py", "*.pyc", "*$py.class", "*~", ".*", "*.bak"]
 standard_exclude_directories = [
-    ".*", "CVS", "_darcs", "./build", "./dist", "EGG-INFO", "*.egg-info"
+".*", "CVS", "_darcs", "./build", "./dist", "EGG-INFO", "*.egg-info"
 ]
 
 
@@ -107,11 +107,11 @@ setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description="Projeto de estudos de libs para python e publicação",
-    long_description_content_type="text/markdown",
+    long_description='Projeto de estudos de libs para python e publicação',
+    long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
-    license=read('LICENSE'),
+    license="GNU AFFERO GENERAL PUBLIC LICENSE",
     url=URL,
     packages=find_packages(exclude=["tests.*", "tests"]),
     package_data=find_package_data(PACKAGE, only_in_packages=False),
@@ -124,10 +124,11 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.6",
         "Framework :: Pytest",
-        
+
     ],
     install_requires=[
         'requests'
+
     ],
     zip_safe=False,
 )
