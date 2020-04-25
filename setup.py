@@ -102,14 +102,12 @@ AUTHOR_EMAIL = "serluscasas@gmail.com"
 URL = "https://github.com/serlus/libpythonpro"
 VERSION = __import__(PACKAGE).__version__
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
 
 setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description=long_description,
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
