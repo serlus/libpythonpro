@@ -13,6 +13,7 @@ source .venv/bin/activate
 pip install -r requirements-dev.
 
 ```
+
 para conferir qualidade de código:
 
 ```console
