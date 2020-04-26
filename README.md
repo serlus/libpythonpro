@@ -6,10 +6,11 @@ Módulo de estudos para pytools do curso python pro
 [![Python 3](https://pyup.io/repos/github/serlus/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/serlus/libpythonpro/)
 
 para instalar:
-   ```console
-    python3 -m venv .venv
-    source .venv/bin/activate
-    pip install -r requirements-dev.
+
+```console
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-dev.
 
 ```
 para conferir qualidade de código:
