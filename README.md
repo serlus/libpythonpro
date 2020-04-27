@@ -4,6 +4,9 @@ Módulo de estudos para pytools do curso python pro
 [![Build Status](https://travis-ci.org/serlus/libpythonpro.svg?branch=master)](https://travis-ci.org/serlus/libpythonpro)
 [![Updates](https://pyup.io/repos/github/serlus/libpythonpro/shield.svg)](https://pyup.io/repos/github/serlus/libpythonpro/)
 [![Python 3](https://pyup.io/repos/github/serlus/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/serlus/libpythonpro/)
+[![codecov](https://codecov.io/gh/serlus/libpythonpro/branch/master/graph/badge.svg)](https://codecov.io/gh/serlus/libpythonpro)
+
+
 
 para instalar:
 
