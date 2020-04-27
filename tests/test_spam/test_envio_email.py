@@ -1,10 +1,10 @@
-import EmailInvalido, Enviador
+
+from spam.enviador_email import Enviador
 import pytest
 
 
 class Enviador:
     pass
-
 
 def test_criar_enviador_de_email():
     enviador=Enviador()
