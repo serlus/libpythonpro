@@ -9,3 +9,4 @@ install:
     - pytest liblearn --cov=liblearn
 after_success:
     - codecov
+    
