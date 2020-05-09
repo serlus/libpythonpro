@@ -13,6 +13,7 @@ decoretor importei pytest passando mark e parametrize
 nome do parametro é usado como argumento da função
 """
 
+
 @pytest.mark.parametrize(
     'destinatario',  # parametro
     ['rafaela.piva@yahoo.com.br', 'serluscasas@gmail.com']
@@ -33,7 +34,7 @@ def test_rementente(destinatario):  # (argumento da função)
     [' ', 'rafaela']
     )
 def test_rementente_invalido(remetente):
-    enviador=Enviador()
+    enviador = Enviador()
     with pytest.raises(EmailInvalido):  # criar sistema de exceções
         enviador.enviar(
             remetente,
