@@ -1,5 +1,5 @@
 
-from liblearn.spam.enviador_email import Enviador
+from liblearn.spam.enviador_email import Enviador, EmailInvalido
 import pytest
 
 
@@ -28,20 +28,16 @@ def test_rementente(destinatario):  # (argumento da função)
     assert destinatario in resultado
 
 
-# class EmailInvalido:
-
-
-#     @pytest.mark.parametrize(
-#         'remetente',
-#         [' ', 'rafaela']
-#         )
-#     def test_rementente_invalido(remetente):
-#         enviador=Enviador()
-#         with pytest.raises(EmailInvalido):
-#             enviador.enviar(
-#                 remetente,
-#                 'serlusmc@yahoo.com.br',
-#                 'teste de envio',
-#                 'primeiro teste de envio de email.'
-#                 )
-#         assert remetente in resultado
+@pytest.mark.parametrize(
+    'remetente',
+    [' ', 'rafaela']
+    )
+def test_rementente_invalido(remetente):
+    enviador=Enviador()
+    with pytest.raises(EmailInvalido):  # criar sistema de exceções
+        enviador.enviar(
+            remetente,
+            'serlusmc@yahoo.com.br',
+            'teste de envio',
+            'primeiro teste de envio de email.'
+            )
