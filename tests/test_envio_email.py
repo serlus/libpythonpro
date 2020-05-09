@@ -33,7 +33,6 @@ class EmailInvalido:
         'remetente',
         [' ', 'rafaela']
         )
-
     def test_rementente_invalido(remetente):
         enviador=Enviador()
         with pytest.raises(EmailInvalido):
