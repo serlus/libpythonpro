@@ -4,20 +4,21 @@ import pytest
 
 
 def test_criar_enviador_de_email():
-    enviador=Enviador()
+    enviador = Enviador()
     assert enviador is not None
+
+
 """
-decoretor importei pytest passando mark e parametrize 
+decoretor importei pytest passando mark e parametrize
 nome do parametro é usado como argumento da função
 """
 
 @pytest.mark.parametrize(
     'destinatario',  # parametro
-    ['rafaela.piva@yahoo.com.br','serluscasas@gmail.com']
+    ['rafaela.piva@yahoo.com.br', 'serluscasas@gmail.com']
     )
-
 def test_rementente(destinatario):  # (argumento da função)
-    enviador=Enviador()
+    enviador = Enviador()
     resultado = enviador.enviar(
         destinatario,
         'serlusmc@yahoo.com.br',
@@ -44,4 +45,3 @@ def test_rementente(destinatario):  # (argumento da função)
 #                 'primeiro teste de envio de email.'
 #                 )
 #         assert remetente in resultado
-
