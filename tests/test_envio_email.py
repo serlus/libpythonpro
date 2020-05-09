@@ -1,4 +1,4 @@
-
+"""
 from spam.enviador_email import Enviador
 import pytest
 
@@ -43,3 +43,4 @@ class EmailInvalido:
                 'primeiro teste de envio de email.'
                 )
         assert remetente in resultado
+"""
