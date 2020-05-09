@@ -10,8 +10,8 @@ class Sessao():
     def listar(self):
         return self.usuarios
 
-    def roll_back(self):
-        pass
+    def roll_back(self):  # para a teste
+        self.usuarios.clear()
 
     def fechar(self):
         pass
