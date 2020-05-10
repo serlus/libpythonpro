@@ -1,7 +1,11 @@
 class Enviador:
+    def __init__(self):
+        self.gtd_email_enviados = 0
+
     def enviar(self, remetente, destinatario, assunto, corpo):
         if '@' not in remetente:
             raise EmailInvalido(f'Email de rementente inválido: {remetente}')
+        self.gtd_email_enviados += 1
         return remetente
 
 
