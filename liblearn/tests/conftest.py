@@ -10,6 +10,7 @@ def conexao():
     # Tear down
     conexao_obj.fechar()
 
+
 @pytest.fixture
 def sessao(conexao):
     sessao_obj = conexao.gerar_sessao()
