@@ -26,18 +26,13 @@ def buscar_avatar(usuario):
     return resp.json()['avatar_url']
 
 
-def repositorios(usuario):
+def buscar_repositorios(usuario):
     """
     Busca reposiotorios dentro do GitHub
 
     :param usuario: str nome de usuario no github
     :return: str com o link dos repositorios
     """
-    url = f'https://api.github.com/users/{usuario}'
-    resp = requests.get(url)
+    url_2 = f'https://api.github.com/users/{usuario}'
+    resp = requests.get(url_2)
     return resp.json()['repos_url']
-
-
-if __name__ == '__main__':
-    print(buscar_avatar('serlus'))
-    print(repositorios('serlus'))
