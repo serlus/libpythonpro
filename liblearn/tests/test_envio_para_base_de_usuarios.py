@@ -42,7 +42,6 @@ def test_qd_de_spam(sessao, usuarios):
     assert len(usuarios) == enviador.enviar.call_count
 
 
-
 def test_parametros_de_spam(sessao):
     usuario = Usuario(nome='Sergio', email='serluscasas@gmail.com')
     sessao.salvar(usuario)

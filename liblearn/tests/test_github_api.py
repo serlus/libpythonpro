@@ -12,6 +12,7 @@ def test_buscar_avatar():
     url = github_api.buscar_avatar('serlus')
     assert 'https://avatars0.githubusercontent.com/u/63012359?v=4' == url
 
+
 def test__buscar_repositorios():
     resp_mock = Mock()
     resp_mock.json.return_value = {
