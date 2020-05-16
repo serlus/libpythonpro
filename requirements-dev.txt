@@ -7,7 +7,7 @@ pyflakes==2.1.0
 #deps do pytest
 pyparsing==2.4.7
 py==1.8.1
-more-itertools==8.2.0
+more-itertools==8.3.0
 pluggy==0.13.1
 attrs==19.3.0
 six==1.14.0
