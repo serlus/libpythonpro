@@ -10,6 +10,7 @@ def avatar_url(mocker):
     resp_mock.json.return_value = {
         'login':	'serlus', 'id':	63012359,
         'avatar_url': url,
+         avatar_integracao 
     }
     get_mock = mocker.patch('liblearn.github_api.requests.get')
     get_mock.return_value = resp_mock
