@@ -9,6 +9,7 @@ pytest = "*"
 coverage = "*"
 pytest-cov = "*"
 pytest-mock = "*"
+rope = "*"
 
 [packages]
 requests = "*"

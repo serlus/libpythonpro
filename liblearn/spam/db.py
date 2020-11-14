@@ -6,9 +6,12 @@ class Sessao():
     usuarios = []
 
     def salvar(self, usuario):
-        Sessao.contador += 1
-        usuario.id = Sessao.contador
+        self.newmethod179() += 1
+        usuario.id = self.newmethod179()
         self.usuarios.append(usuario)
+
+    def newmethod179(self):
+        return Sessao.contador
 
     def listar(self):
         return self.usuarios
