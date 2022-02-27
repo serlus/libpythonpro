@@ -200,10 +200,10 @@
         },
         "rope": {
             "hashes": [
-                "sha256:658ad6705f43dcf3d6df379da9486529cf30e02d9ea14c5682aa80eb33b649e1"
+                "sha256:edf2ed3c9b35a8814752ffd3ea55b293c791e5087e252461de898e953cf9c146",
+                "sha256:f87662c565086d660fc855cc07f37820267876634c3e9e51bddb32ff51547268"
             ],
-            "index": "pypi",
-            "version": "==0.17.0"
+            "version": "==0.23.0"
         },
         "six": {
             "hashes": [
